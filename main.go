@@ -16,7 +16,7 @@ func main() {
 }
 
 func hello1(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "<h1>Welcome to my awesome site!</h1>")
+	fmt.Fprint(w, "<h1>Welcome to my new awesome site!</h1>")
 
 	testDate := time.Now()
 
