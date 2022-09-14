@@ -10,7 +10,7 @@ import (
 
 func main() {
 
-	//port := os.Getenv("PORT")
+	port := os.Getenv("PORT")
 	http.HandleFunc("/", hello1)
 	http.ListenAndServe(":"+port, nil)
 	http.ListenAndServe(":3000", nil)
