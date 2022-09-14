@@ -9,14 +9,15 @@ import (
 )
 
 func main() {
-	port := os.Getenv("PORT")
+
+	//port := os.Getenv("PORT")
 	http.HandleFunc("/", hello1)
 	http.ListenAndServe(":"+port, nil)
-	//http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":3000", nil)
 }
 
 func hello1(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "<h1>Welcome to my new awesome site!</h1>")
+	fmt.Fprint(w, "<h1>Welcome to my new awesome site! THIS IS GREAT</h1>")
 
 	testDate := time.Now()
 
