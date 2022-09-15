@@ -3,16 +3,16 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"os"
 	"time"
+
 	"yaacrew.org.uk/datecheck"
 )
 
 func main() {
 
-	port := os.Getenv("PORT")
+	//port := os.Getenv("PORT")
 	http.HandleFunc("/", hello1)
-	http.ListenAndServe(":"+port, nil)
+	//http.ListenAndServe(":"+port, nil)
 	http.ListenAndServe(":3000", nil)
 }
 
